@@ -5,20 +5,13 @@
 #Mit dem Cmdlet Import-CSV wird eine CSV-Datei importiert und Informationen 
 #in einer Variable $Mailboxes gespeichert. 
 
-#$Mailboxes = import-csv -path  "\\ZEB-EXB-VM13344\d$\export_Postfach1\pst_liste.csv "
-#$Mailboxes1 = import-csv -path   "\\ZMX-EXVB-P17734\d$\export_Postfach\pst_liste1.csv" -delimiter ';'
-#$Mailboxes1 = import-csv -path  "\\ZMX-EXVB-P17734\d$\export_Postfach\pst_liste2.csv" -delimiter ';'
-#$Mailboxes1 = import-csv -path  "\\ZMX-EXVB-P17734\d$\export_Postfach\pst_liste3.csv" -delimiter ';'
-#$Mailboxes1 = import-csv -path  "\\ZMX-EXVB-P17734\d$\export_Postfach\pst_liste4.csv" -delimiter ';'
-$Mailboxes1 = import-csv -path  "\\ZMX-EXVB-P17734\d$\export_Postfach\pst_liste5.csv" -delimiter ';'
 
+#$Mailboxes1 = import-csv -path   "\\Server1\d$\export_Postfach\pst_liste1.csv" -delimiter ';'
 
-#$hostname = hostname
-#$Mailboxes = import-csv -path  "\\$hostname\d$\export_Postfach1\pst_liste.csv"
 #$cred = Get-Credential
  
 #$TargetPst -Variable enthält ein Share-Verzeichnis auf Zielserver
-$TargetPst =  "\\ZMX-EXVB-P17734\d$\export_Postfach\"
+$TargetPst =  "\\Server1\d$\export_Postfach\"
 
 
 # Liste der fehlgeschlagenen Mailboxen
@@ -30,7 +23,7 @@ $pstlog = $TargetPst + "pst_log.txt"
 # Begrenzt die Anzahl der zu verarbeitenden Mailboxen
 #$Mailboxes1 = $Mailboxes
 
-#Write-Host $Mailboxes1
+#Write-Host $Mailboxes1 [4]
 
 
 # Mit der For-Each-Schleife werden $AdUsers Objekte iteriert (eine Liste schrittweise durchgehen). Mit dem Cmdlet Get-AdUser 
