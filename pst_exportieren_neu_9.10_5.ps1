@@ -151,4 +151,4 @@ $pstlog = $TargetPst + "pst_log.txt"
     Write-Host -ForegroundColor DarkGreen `n
     $FailedMailboxes | Format-Table -AutoSize >> $TargetPst\pst_fail.txt
 
-#EX-BETA\zeb-schalt
+
